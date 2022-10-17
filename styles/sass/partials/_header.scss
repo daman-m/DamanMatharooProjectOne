@@ -1,0 +1,42 @@
+@use './variables';
+
+.homeHeader {
+    background-image: url(./resources/header-home.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            padding-top: 95px;
+            padding-bottom: 40px;
+            margin-left: 130px;
+            line-height: 1;
+        }
+
+        nav {
+            width: 40%;
+            padding-top: 40px; 
+
+            ul {
+               display: flex;
+               justify-content: space-around;
+           }
+
+        }
+
+    }
+    .imgContainer {
+        width: 825px;
+    }
+
+}
+
+header li:hover,
+header li:focus {
+  border-bottom: 3px solid variables.$yellow;
+  padding-bottom: 3px; 
+}

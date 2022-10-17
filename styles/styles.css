@@ -331,10 +331,12 @@ p {
 ul, li, a, input {
   padding: 0;
   margin: 0;
+  text-transform: uppercase;
 }
 
 ul {
   list-style: none;
+  font-weight: bold;
 }
 
 a {
@@ -343,4 +345,45 @@ a {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.homeHeader {
+  background-image: url(./resources/header-home.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.homeHeader .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.homeHeader .wrapper h1 {
+  padding-top: 95px;
+  padding-bottom: 40px;
+  margin-left: 130px;
+  line-height: 1;
+}
+.homeHeader .wrapper nav {
+  width: 40%;
+  padding-top: 40px;
+}
+.homeHeader .wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.homeHeader .imgContainer {
+  width: 825px;
+}
+
+header li:hover,
+header li:focus {
+  border-bottom: 3px solid #f8fb05;
+  padding-bottom: 3px;
 }

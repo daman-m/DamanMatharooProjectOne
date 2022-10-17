@@ -58,10 +58,13 @@ body {
   ul, li, a, input {
     padding: 0;
     margin: 0;
+    text-transform: uppercase;
   }
   
   ul {
     list-style: none;
+    font-weight: bold;
+    
   }
   
   a {

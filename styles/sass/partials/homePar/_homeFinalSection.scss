@@ -1,0 +1,28 @@
+@use '../globalPar/variables';
+
+.emptyfullbleed {
+    background-image: url(./resources/banner-image.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.searchStyle {
+    padding-top: 60px;
+    padding-bottom: 150px;
+
+    .textContainer {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: variables.$black;
+    color: variables.$white;
+    text-align: center;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+

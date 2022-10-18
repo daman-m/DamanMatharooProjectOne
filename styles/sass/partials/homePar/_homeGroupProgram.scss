@@ -2,6 +2,7 @@
  
 .programLocations  {
     background-color: variables.$lightGreen;
+    height: 85vh;
 
     .wrapper {
         display: flex;
@@ -9,23 +10,45 @@
 
         .leftSide{
             position: relative;
-            width: 30%;
-        }
-
-        .rightSide {
-           position: relative;
-            width: 30%;
+            width: 38%;
+            padding-top: 300px;
+            text-align: right;
+            
 
             .imgContainer {
                 width: 600px;
                 position:absolute;
+                left: -143px;
+                top:-155px;
 
                 img {
-                    box-shadow: -15px 15px 0 3px variables.$yellow;                    
+                    box-shadow: 15px 15px 0 2px variables.$yellow;                    
+                }
+            }
+        }
+
+        .rightSide {
+           position: relative;
+            width: 38%;
+
+            .imgContainer {
+                width: 600px;
+                position:absolute;
+                bottom: -131px;
+                right: -143px;
+
+                img {
+                    box-shadow: -15px 15px 0 2px variables.$yellow;                    
                 }
             }
                   
         }
     }
 
+}
+.emptyfullbleed {
+    background-image: url(./resources/banner-image.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

@@ -1,4 +1,5 @@
-@use './variables';
+@use "../globalPar/variables";
+
 
 
 body {
@@ -13,6 +14,7 @@ body {
     color: variables.$black;
     margin: 0;
     text-transform: uppercase;
+    margin-bottom: 25px;
   }
   
   h1 {
@@ -53,6 +55,7 @@ body {
   p {
     line-height: 1.5rem;
     margin: 0 0 30px 0;
+    letter-spacing: 2px;
   }
   
   ul, li, a, input {
@@ -73,3 +76,14 @@ body {
     cursor: pointer;
     transition: 0.3s;
   }
+
+  .buttonA {
+    font-family: variables.$subHeading;
+    letter-spacing: 1px;
+    background-color: variables.$green;
+    color: variables.$white;
+    padding: 10px 15px 2px;
+    text-align: center;
+  }
+  
+

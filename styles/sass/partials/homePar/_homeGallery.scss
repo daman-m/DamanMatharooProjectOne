@@ -1,0 +1,15 @@
+@use '../globalPar/variables';
+
+.gallery {
+    background-color: variables.$lightGreen;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        
+        li {
+            width: calc((100% / 3) - 20px);
+            margin: 0 20px;
+        }
+    }
+}

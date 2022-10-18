@@ -1,0 +1,14 @@
+@use '../globalPar/variables';
+
+.newMaterials .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .textContainer {
+        width:65%;
+    }
+
+    .imgContainer img {
+        box-shadow: -15px 15px 0 3px variables.$yellow;
+    }
+}

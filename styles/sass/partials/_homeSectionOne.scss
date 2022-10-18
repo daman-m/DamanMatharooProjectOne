@@ -1,0 +1,10 @@
+@use './variables';
+
+.newMaterials .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .textContainer {
+        width:55%;
+    }
+}

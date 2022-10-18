@@ -1,0 +1,31 @@
+@use '../globalPar/variables';
+ 
+.programLocations  {
+    background-color: variables.$lightGreen;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .leftSide{
+            position: relative;
+            width: 30%;
+        }
+
+        .rightSide {
+           position: relative;
+            width: 30%;
+
+            .imgContainer {
+                width: 600px;
+                position:absolute;
+
+                img {
+                    box-shadow: -15px 15px 0 3px variables.$yellow;                    
+                }
+            }
+                  
+        }
+    }
+
+}

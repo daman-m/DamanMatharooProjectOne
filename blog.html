@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Blog</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body class="blog">
+     <!-- HEADER SECTION -->
+     <header class="blogHeader" id="blog">
+        <div class="wrapper"><!-- WRAPPER -->
+            <!-- NAV SECTION -->
+            <nav>
+                <h2 class="logo">Sanctuary <br> Helpers</h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav><!-- END NAV  -->
+            <h1>Blog</h1>
+        </div><!-- END .wrapper -->
+    </header>
+    <!-- END HEADER SECTION -->
+    <main>
+        <!-- BLOG POST LEFT SIDE -->
+        <section class="blogPost">
+            <div class="leftSide"><!-- LEFTSIDE DIV -->
+                <div class="imgContainer"><!-- IMG CONTAINER -->
+                    <img src="./styles/resources/blog-post-image.jpg" alt="Bedroom with a  blue bed frame and white sheets and pillows with blue painting hanging over it on the wall. Small wooden night stand by the bed with a white lamp on it.">
+                </div><!-- END .IMGcONTAINER -->
+                <div class="textContainer">
+                    <h3>Finding the Right pieces for the new space</h3>
+                    <span>Monday, October 5th 2019 by Saron</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, non quisquam alias, facilis blanditiis reprehenderit soluta repudiandae placeat totam veritatis esse hic autem consequuntur minus quae nostrum impedit atque. Quaerat voluptatum provident, nihil maiores odio earum.
+                    Iure ipsam qui est dolores amet ipsa nihil ab? Deleniti esse consequuntur sit, maxime nihil voluptatem eveniet pariatur similique, quia explicabo corrupti? Molestiae deserunt sit, odio sed ipsa totam, libero vitae iste voluptas officiis doloribus hic!
+                    Pariatur, velit quasi voluptatem sit repellendus accusamus provident officia vero aut possimus perspiciatis quibusdam neque saepe, quaerat deleniti explicabo doloremque minima similique incidunt? Voluptatum ea vero cumque velit molestias vitae incidunt doloribus quo exercitationem, in libero.
+                    Quo mollitia officia rem. Cupiditate deleniti accusantium quod illo vitae velit exercitationem placeat dolorum perferendis deserunt, soluta quae obcaecati quos et, qui ipsa. In perferendis ab accusantium laudantium. Atque ad reiciendis in distinctio accusamus, quibusdam optio.</p>
+                </div>
+            </div><!-- END .leftSide  -->
+            <!-- RIGHT SIDE ASIDE -->
+            <aside class="rightSide">
+                <div class="imgContainer">
+                    <!-- IMG CONTAINER -->
+                    <img src="./styles/resources/sidebar-image.jpg" alt="mordern looking ceiling light with bronze coloured, trianluglar shaped covering.">
+                </div><!-- END .imgContainer -->
+                <div class="textContainer">
+                    <h4>Our Mission</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ducimus aliquam fugiat reprehenderit delectus.</p>
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div><!-- END .textContainer -->
+            </aside><!-- END ASIDE SECTION -->
+        </section><!-- END BLOG POST SECTION -->
+        <section class="comments"><!-- COMMENT SECTION -->
+            <div class="wrapper"><!-- WRAPPER -->
+                <div class="postedCommments"><!-- POSETED COMMMENTS -->
+                    <h3>Comments:</h3>
+                    <div class="firstComment">
+                        <div class="imgContainer">
+                            <img src="./styles/resources/comment-image.jpg" alt="profile picture">
+                        </div><!-- END .imgContainer -->
+                        <div class="textContainer">
+                            <span> TUESDAY OCTOBER 9TH, 2019 BY DAVIN</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae distinctio nobis, veniam voluptas praesentium alias consequatur fugit aspernatur. Nemo, officiis! Distinctio repellat dolore quo possimus, commodi molestias iure repudiandae!</p>
+                        </div><!-- END .textContainer -->
+                    </div><!-- END .first comment -->
+
+                    <div class="secondComment">
+                        <div class="imgContainer">
+                            <img src="./styles/resources/comment-image.jpg" alt="profile picture">
+                        </div><!-- END .imgContainer -->
+                        <div class="textContainer">
+                            <span> TUESDAY OCTOBER 9TH, 2019 BY DAVIN</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae distinctio nobis, veniam voluptas praesentium alias consequatur fugit aspernatur. Nemo, officiis! Distinctio repellat dolore quo possimus, commodi molestias iure repudiandae!</p>
+                        </div><!-- END .textContainer -->
+                    </div><!-- END .secondComment -->
+                    <form action="#" method="POST" class="writeComment" name="writeComment">
+                        <div class="nameEmail nameDiv">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="NAME">
+                        
+                            <label for="email"></label>
+                            <input type="text" id="email" name="email" placeholder="EMAIL ADDRESS">
+                        </div>
+                        <div class="commentDiv">
+                            <label for="comment"></label>
+                            <textarea name="comment" id="comment" placeholder="COMMENT"></textarea>
+                        </div>
+                        <button class="buttonA" type="submit">Post Comment</button>
+                    </form><!-- END FORM -->
+                </div><!-- END POSTED COMMMENTS -->
+            </div><!-- END .wrapper -->
+        </section><!-- END SECTION COMMENTS -->
+    </main><!-- END MAIN SECTION -->
+    <footer>
+        <div class="wrapper">
+            <p>Copyright@2019 HackerYou</p>
+        </div>
+    </footer>
+</body>
+</html>

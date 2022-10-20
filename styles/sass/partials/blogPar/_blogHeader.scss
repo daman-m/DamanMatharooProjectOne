@@ -1,0 +1,27 @@
+@use '../globalPar/variables';
+
+.blogHeader {
+    background-image: url(./resources/blog-image.jpg);
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+        nav {
+            width: 100%;
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between; 
+
+            ul {
+               display: flex;
+               width: 40%;
+               justify-content: space-around;
+           }
+
+        }
+
+        h1 {
+            padding-top: 120px;
+        }
+
+}

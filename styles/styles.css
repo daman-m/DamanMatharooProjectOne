@@ -277,6 +277,10 @@ section {
   padding: 100px 0;
 }
 
+.blog {
+  background-color: #E0FDDF;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
@@ -357,6 +361,12 @@ a {
   text-align: center;
 }
 
+.logo {
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+}
+
 .homeHeader {
   background-image: url(./resources/header-home.jpg);
   height: 100vh;
@@ -392,8 +402,8 @@ a {
   width: 825px;
 }
 
-header li:hover,
-header li:focus {
+header a:hover,
+header a:focus {
   border-bottom: 3px solid #f8fb05;
   padding-bottom: 3px;
 }
@@ -531,4 +541,32 @@ footer {
 }
 footer p {
   margin-bottom: 0;
+}
+
+.blogHeader {
+  background-image: url(./resources/blog-image.jpg);
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blogHeader nav {
+  width: 100%;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogHeader nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.blogHeader h1 {
+  padding-top: 120px;
 }

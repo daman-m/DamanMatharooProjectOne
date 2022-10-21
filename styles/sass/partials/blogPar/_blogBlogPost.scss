@@ -1,0 +1,67 @@
+@use '../globalPar/variables';
+
+.blogPost {
+    display: flex;
+    justify-content: space-between;
+
+    
+
+    .leftSide {
+        position: relative;
+
+
+        
+        .imgContainer {
+            width:80%;
+            box-shadow: 11px 13px 0 2px variables.$yellow;
+            position: absolute;
+            top: -252px;
+        }
+
+        .textContainer {
+            width: 81%;
+            padding-left: 135px;
+            background-color: variables.$white;
+            border-right: 8px solid variables.$yellow;
+            border-bottom: 8px solid variables.$yellow;
+            padding-top:395px;
+            padding-right: 20px;
+        }
+    }
+
+    .rightSide {
+        height: fit-content;
+        width: 900px;
+        background-color: variables.$yellow;
+        position: relative;
+        padding-top: 40px;
+        align-self: center;
+        margin-bottom: 125px;
+
+
+        .imgContainer {
+            position: absolute;
+            box-shadow: -13px 15px 0 3px variables.$yellow;
+            width: 95%;
+            top: -340px;
+            right:0;
+        }
+
+        .textContainer{
+            padding: 15px 30px 15px 15px;
+            line-height: 1.6rem;
+            letter-spacing: 2px;
+
+            h4 {
+                font-size: 1.4rem;
+            }
+            
+            li {
+                font-weight: normal;
+                text-transform: none;
+                list-style: inside;
+            }
+        }
+    }
+
+}

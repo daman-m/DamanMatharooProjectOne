@@ -23,4 +23,50 @@
             }
         }
     }
+
+    .writeComment {
+        padding-top: 50px;
+
+        label {
+            display: none;
+        }
+
+        .nameEmail {
+            display: flex;
+            justify-content: space-between;
+           
+
+            .name,
+            .email {
+            width: calc((100% / 2) - 25px);
+            background-color:  variables.$lightGreen;
+            border: none;
+            border-bottom:  variables.$green 2px solid;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            margin-bottom: 30px;
+            }
+        
+        }
+
+        .commentArea {
+            width: 100%;
+            background-color:  variables.$lightGreen;
+            border: variables.$green 2px solid;
+            padding-top: 30px;
+            padding-left: 23px;
+            height: 270px;
+            margin-bottom: 30px;
+            resize: none;
+        }
+        button {
+            width: 100%;
+            text-align: center;
+            border: variables.$green 2px solid;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+
+
+    }
 }

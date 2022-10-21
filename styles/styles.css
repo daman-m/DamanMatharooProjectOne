@@ -660,7 +660,44 @@ footer p {
   display: inline-block;
   margin-bottom: 15px;
 }
-
-* {
-  border: 1px solid red;
+.postedCommments .writeComment {
+  padding-top: 50px;
+}
+.postedCommments .writeComment label {
+  display: none;
+}
+.postedCommments .writeComment .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.postedCommments .writeComment .nameEmail .name,
+.postedCommments .writeComment .nameEmail .email {
+  width: calc(50% - 25px);
+  background-color: #E0FDDF;
+  border: none;
+  border-bottom: #065635 2px solid;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.postedCommments .writeComment .commentArea {
+  width: 100%;
+  background-color: #E0FDDF;
+  border: #065635 2px solid;
+  padding-top: 30px;
+  padding-left: 23px;
+  height: 270px;
+  margin-bottom: 30px;
+  resize: none;
+}
+.postedCommments .writeComment button {
+  width: 100%;
+  text-align: center;
+  border: #065635 2px solid;
+  cursor: pointer;
+  padding: 10px 0;
 }

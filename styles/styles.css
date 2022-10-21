@@ -598,6 +598,9 @@ footer p {
   padding-top: 395px;
   padding-right: 20px;
 }
+.blogPost .leftSide .textContainer span {
+  font-style: italic;
+}
 .blogPost .rightSide {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -630,4 +633,34 @@ footer p {
   font-weight: normal;
   text-transform: none;
   list-style: inside;
+}
+
+.comments {
+  padding-top: 0;
+}
+
+.postedCommments {
+  width: 67%;
+}
+.postedCommments .firstComment,
+.postedCommments .secondComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.postedCommments .firstComment .textContainer,
+.postedCommments .secondComment .textContainer {
+  width: 80%;
+  margin-left: 30px;
+}
+.postedCommments .firstComment .textContainer span,
+.postedCommments .secondComment .textContainer span {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+* {
+  border: 1px solid red;
 }

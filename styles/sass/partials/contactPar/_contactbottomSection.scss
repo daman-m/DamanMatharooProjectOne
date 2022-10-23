@@ -1,0 +1,98 @@
+@use '../globalPar/variables';
+
+.contact .blogHeader {
+    background-image: url(./resources/contact-image.jpg);
+
+}
+
+.contactAddress {
+    height: 65vh;
+    background-color: variables.$lightGreen;
+    position: relative;
+
+    .address {
+        width: 23%;
+
+        p {
+            margin: 1% 0;
+        }
+        
+    }
+    
+
+}
+
+.contactAddress .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    .socialIcons {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    
+            .imgContainer {
+                width: 35px;
+                height: 35px;
+
+                .big {
+                    width: 25px;
+                    height: 25px;
+                }
+    
+            }
+        
+        }
+
+    .writeMessage  {
+        padding: 50px;
+        position: absolute;
+        left: -60px;
+        top: -250px;
+        background-color: variables.$white;
+        width: 855px;
+        box-shadow: 15px 15px 0 2px variables.$yellow;
+
+        label {
+            display: none;
+        }
+
+        .nameEmail {
+            display: flex;
+            justify-content: space-between;
+           
+
+            .name,
+            .email {
+            width: calc((100% / 2) - 25px);
+            background-color:  variables.$white;
+            border: none;
+            border-bottom: variables.$green 2px solid;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            margin-bottom: 30px;
+            }
+        
+        }
+
+        .messageArea {
+            width: 100%;
+            background-color: variables.$white;
+            border: variables.$green 2px solid;
+            padding-top: 30px;
+            padding-left: 23px;
+            height: 270px;
+            margin-bottom: 30px;
+            resize: none;
+        }
+        button {
+            width: 100%;
+            text-align: center;
+            border: variables.$green 2px solid;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+    }
+}
+    

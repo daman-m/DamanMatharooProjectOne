@@ -701,3 +701,94 @@ footer p {
   cursor: pointer;
   padding: 10px 0;
 }
+
+.contact .blogHeader {
+  background-image: url(./resources/contact-image.jpg);
+}
+
+.contactAddress {
+  height: 65vh;
+  background-color: #E0FDDF;
+  position: relative;
+}
+.contactAddress .address {
+  width: 23%;
+}
+.contactAddress .address p {
+  margin: 1% 0;
+}
+
+.contactAddress .wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.contactAddress .wrapper .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+.contactAddress .wrapper .socialIcons .imgContainer {
+  width: 35px;
+  height: 35px;
+}
+.contactAddress .wrapper .socialIcons .imgContainer .big {
+  width: 25px;
+  height: 25px;
+}
+.contactAddress .wrapper .writeMessage {
+  padding: 50px;
+  position: absolute;
+  left: -60px;
+  top: -250px;
+  background-color: #f5f5f5;
+  width: 855px;
+  -webkit-box-shadow: 15px 15px 0 2px #f8fb05;
+          box-shadow: 15px 15px 0 2px #f8fb05;
+}
+.contactAddress .wrapper .writeMessage label {
+  display: none;
+}
+.contactAddress .wrapper .writeMessage .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactAddress .wrapper .writeMessage .nameEmail .name,
+.contactAddress .wrapper .writeMessage .nameEmail .email {
+  width: calc(50% - 25px);
+  background-color: #f5f5f5;
+  border: none;
+  border-bottom: #065635 2px solid;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.contactAddress .wrapper .writeMessage .messageArea {
+  width: 100%;
+  background-color: #f5f5f5;
+  border: #065635 2px solid;
+  padding-top: 30px;
+  padding-left: 23px;
+  height: 270px;
+  margin-bottom: 30px;
+  resize: none;
+}
+.contactAddress .wrapper .writeMessage button {
+  width: 100%;
+  text-align: center;
+  border: #065635 2px solid;
+  cursor: pointer;
+  padding: 10px 0;
+}

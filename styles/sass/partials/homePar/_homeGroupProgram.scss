@@ -41,36 +41,7 @@
                 img {
                     box-shadow: -15px 15px 0 2px variables.$yellow;                    
                 }
-            }
-                  
+            }   
         }
     }
-
 }
-@media (max-width:1300px) {
-    .programLocations .wrapper .leftSide {
-        display: flex;
-        flex-direction: column;
-        padding-top: 0;
-        width: 45%;
-
-        .imgContainer {
-            position: static;
-            width: 100%;
-            margin-bottom: 7%;
-    }
-    }
-    .programLocations .wrapper .rightSide  {
-        display: flex;
-        flex-direction: column;
-        width: 45%;
-
-        .imgContainer {
-            position: static;
-            width: 100%;
-            margin-top: 5%;
-         
-        }
-    }
-    
-    }

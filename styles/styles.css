@@ -526,39 +526,6 @@ header a:focus {
           box-shadow: -15px 15px 0 2px #f8fb05;
 }
 
-@media (max-width: 1300px) {
-  .programLocations .wrapper .leftSide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 0;
-    width: 45%;
-  }
-  .programLocations .wrapper .leftSide .imgContainer {
-    position: static;
-    width: 100%;
-    margin-bottom: 7%;
-  }
-  .programLocations .wrapper .rightSide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 45%;
-  }
-  .programLocations .wrapper .rightSide .imgContainer {
-    position: static;
-    width: 100%;
-    margin-top: 5%;
-  }
-}
 .emptyfullbleed {
   background-image: url(./resources/banner-image.jpg);
   height: 600px;
@@ -871,6 +838,29 @@ footer p {
     width: 100%;
     margin-top: 5%;
   }
+  .blogPost .leftSide {
+    position: static;
+  }
+  .blogPost .leftSide .imgContainer {
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-right: 8px solid #f8fb05;
+  }
+  .blogPost .leftSide .textContainer {
+    padding-top: 10px;
+    width: 80%;
+  }
+  .blogPost .rightSide {
+    position: static;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  .blogPost .rightSide .imgContainer {
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 @media (max-width: 1080px) {
   header nav {
@@ -930,5 +920,121 @@ footer p {
   .emptyfullbleed {
     height: 300px;
     background-size: cover;
+  }
+  .blogHeader {
+    height: auto;
+  }
+  .blogHeader nav ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .blogPost {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPost .rightSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 60px;
+    margin: 30px 0;
+    width: auto;
+  }
+  .blogPost .rightSide .imgContainer {
+    width: 100%;
+  }
+  .postedCommments {
+    width: 100%;
+  }
+}
+@media (max-width: 730px) {
+  .homeHeader {
+    background-position-y: 0;
+  }
+  .wrapper h1 {
+    font-family: "Kumar One", cursive;
+    font-size: 1.65rem;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .gallery ul li {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .gallery ul li img {
+    margin: 0 auto;
+  }
+  .aboutGrid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutGrid .textContainer {
+    width: 100%;
+  }
+  .programLocations .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .programLocations .wrapper .leftSide,
+.programLocations .wrapper .rightSide {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .searchStyle {
+    padding-bottom: 25px;
+  }
+  .blogHeader h1 {
+    padding-bottom: 3%;
+  }
+  .blogPost .leftSide .imgContainer,
+.blogPost .leftSide .textContainer {
+    width: 100%;
+  }
+  .blogPost .leftSide .textContainer {
+    padding: 60px;
+    text-align: center;
+  }
+  .blogPost .rightSide .imgContainer {
+    display: none;
+  }
+  .postedCommments .writeComment .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .postedCommments .writeComment .nameEmail .name,
+.postedCommments .writeComment .nameEmail .email {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 100%;
+  }
+  .blogPost .leftSide .textContainer {
+    padding: 30px;
+    border: none;
+  }
+  .blogPost .leftSide .imgContainer {
+    border: none;
   }
 }

@@ -2,7 +2,8 @@
  
 .programLocations  {
     background-color: variables.$lightGreen;
-    height: 85vh;
+    height: fit-content;
+    padding-bottom: 50px;
 
     .wrapper {
         display: flex;
@@ -46,3 +47,30 @@
     }
 
 }
+@media (max-width:1300px) {
+    .programLocations .wrapper .leftSide {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        width: 45%;
+
+        .imgContainer {
+            position: static;
+            width: 100%;
+            margin-bottom: 7%;
+    }
+    }
+    .programLocations .wrapper .rightSide  {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+
+        .imgContainer {
+            position: static;
+            width: 100%;
+            margin-top: 5%;
+         
+        }
+    }
+    
+    }

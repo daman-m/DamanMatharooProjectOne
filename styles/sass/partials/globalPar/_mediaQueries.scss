@@ -1,0 +1,90 @@
+@use '../globalPar/variables';
+
+@media (max-width:1300px) {
+
+    .homeHeader {
+        height: 80vh;
+
+        .imgContainer {
+            width: 50%;
+        }
+    }
+
+    .programLocations .wrapper .leftSide {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        width: 45%;
+    
+        .imgContainer {
+            position: static;
+            width: 100%;
+            margin-bottom: 7%;
+    }
+    }
+    .programLocations .wrapper .rightSide  {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    
+        .imgContainer {
+            position: static;
+            width: 100%;
+            margin-top: 5%;
+         
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    header nav {
+        display: flex;
+        justify-content: end;
+        ul {
+            width: fit-content;
+    
+            li {
+                display: none;
+            }
+        } 
+    } 
+
+    .homeHeader {
+        height: fit-content;
+        background-size: cover;
+        background-position-y: -110px;
+        .imgContainer {
+            display: none;
+        }
+    }
+
+    .homeHeader .wrapper h1 {
+        margin-left: 0;
+    }
+    .menubar {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .newMaterials {
+        padding-top: 3%;
+    }
+
+    .newMaterials .wrapper {
+        flex-direction: column;
+        align-items: center;
+        .textContainer {
+            width: 100%;
+            text-align: center;
+        }
+        .imgContainer {
+            margin-top: 20px;
+            min-width: 320px ;
+        }
+    }
+    .emptyfullbleed {
+        height: 300px;
+        background-size: cover;
+    }
+}

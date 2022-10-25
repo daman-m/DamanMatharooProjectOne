@@ -861,6 +861,20 @@ footer p {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .contactAddress {
+    padding: 40px 0;
+  }
+  .contactAddress .wrapper {
+    position: static;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contactAddress .wrapper .writeMessage {
+    position: static;
+    padding: 20px;
+    width: 70%;
+  }
 }
 @media (max-width: 1080px) {
   header nav {
@@ -949,6 +963,32 @@ footer p {
   .postedCommments {
     width: 100%;
   }
+  .contactAddress {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 40px 0;
+  }
+  .contactAddress .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .contactAddress .wrapper .writeMessage {
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .contactAddress .wrapper .socialIcons {
+    max-width: 350px;
+  }
+  .contactAddress .address {
+    width: 100%;
+  }
 }
 @media (max-width: 730px) {
   .homeHeader {
@@ -1025,6 +1065,19 @@ footer p {
 .postedCommments .writeComment .nameEmail .email {
     width: 100%;
   }
+  .contactAddress .wrapper .writeMessage .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactAddress .wrapper .writeMessage .nameEmail .name,
+.contactAddress .wrapper .writeMessage .nameEmail .email {
+    width: 100%;
+  }
+  .contactAddress .wrapper .socialIcons {
+    margin-top: 5%;
+  }
 }
 @media (max-width: 350px) {
   html {
@@ -1036,5 +1089,9 @@ footer p {
   }
   .blogPost .leftSide .imgContainer {
     border: none;
+  }
+  .contactAddress .wrapper .writeMessage {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }

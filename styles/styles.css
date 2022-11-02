@@ -402,8 +402,8 @@ a {
   width: 825px;
 }
 
-header a:hover,
-header a:focus {
+header ul a:hover,
+header ul a:focus {
   border-bottom: 3px solid #f8fb05;
   padding-bottom: 3px;
 }
@@ -566,11 +566,25 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blogHeader nav ul {
+.blogHeader nav .tester {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 40%;
+}
+.blogHeader nav .tester .menubar {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.blogHeader nav .tester ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -885,13 +899,36 @@ footer p {
         -ms-flex-pack: end;
             justify-content: end;
   }
-  header nav ul {
+  header nav .tester {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .tester ul {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  header nav ul li {
+  header nav .tester ul li {
     display: none;
+    padding: 10px 5px;
+    text-align: center;
+  }
+  header nav .tester ul li:hover, header nav .tester ul li:focus {
+    background-color: #f8fb05;
+  }
+  header nav .tester ul li.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .homeHeader {
     height: -webkit-fit-content;
@@ -910,6 +947,12 @@ footer p {
     display: inline-block;
     width: 50px;
     height: 50px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .menubar img {
+    display: inline;
+    padding-right: 1%;
   }
   .newMaterials {
     padding-top: 3%;

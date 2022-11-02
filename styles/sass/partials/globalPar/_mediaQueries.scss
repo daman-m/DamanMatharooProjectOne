@@ -103,13 +103,34 @@
     header nav {
         display: flex;
         justify-content: end;
-        ul {
-            width: fit-content;
-    
-            li {
-                display: none;
-            }
-        } 
+
+        .tester {
+            // background-color: variables.$lightGreen;
+            display: flex;
+            flex-direction: column;
+
+            ul {
+                width: fit-content;
+                flex-direction: column;
+        
+                li {
+                    display: none;
+                    padding: 10px 5px;
+                    text-align: center;
+
+                    &:hover,
+                    &:focus {
+                        background-color: variables.$yellow;
+                    }
+                }
+
+                li.active {
+                    display: flex;
+                }
+
+            } 
+        }
+
     } 
 
     .homeHeader {
@@ -127,7 +148,13 @@
     .menubar {
         display: inline-block;
         width: 50px;
-        height: 50px;
+        height: 50px; 
+        align-self: flex-end;
+        img {
+            display: inline;
+            padding-right: 1%;
+        }
+        
     }
 
     .newMaterials {

@@ -34,8 +34,8 @@
     }
 
 }
-header a:hover,
-header a:focus {
+header ul a:hover,
+header ul a:focus {
   border-bottom: 3px solid variables.$yellow;
   padding-bottom: 3px; 
 }

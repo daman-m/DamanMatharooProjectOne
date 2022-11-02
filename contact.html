@@ -17,13 +17,18 @@
             <!-- NAV SECTION -->
             <nav>
                 <h2 class="logo">Sanctuary <br> Helpers</h2>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li class="menubar"><a href="#"> <img src="./styles/resources/noun-menu.svg" alt=""></a></li>
-                </ul>
+
+                <div class="tester">
+                    
+                    <div class="menubar"><a href="#" class="hamburger"> <img src="./styles/resources/noun-menu.svg" alt=""></a></div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
             </nav><!-- END NAV  -->
             <h1>Get in Touch</h1>
         </div><!-- END .wrapper -->
@@ -73,3 +78,30 @@
             <p>Copyright@2019 HackerYou</p>
         </div>
     </footer>
+
+    <script>
+
+        // Hamburger menu here
+        // When user clicks on menu bar, a slide out menu should appear on the screen with li items that are functional and can be used to navigate between pages at smaller screen size 
+
+
+        // Step 1: listen for click on menu button 
+        // on click, open slide out menu 
+
+        const hamburger = document.querySelector('.hamburger');
+        console.log(hamburger)
+
+        const tester = document.querySelectorAll('.tester ul li');
+        console.log(tester)
+
+        hamburger.addEventListener('click', () => {
+
+            for(i = 0; i < tester.length; i++) {
+                tester[i].classList.toggle('active')
+            }
+        
+        })
+
+    </script>
+</body>
+

@@ -149,16 +149,12 @@
 
         const hamburger = document.querySelector('.hamburger');
         console.log(hamburger)
-
         const tester = document.querySelectorAll('.tester ul li');
         console.log(tester)
-
         hamburger.addEventListener('click', () => {
-
             for(i = 0; i < tester.length; i++) {
                 tester[i].classList.toggle('active')
             }
-        
         })
 
     </script>
